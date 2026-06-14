@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import { CheckCircle2, ArrowRight, Home, Calculator, Clock, ShieldCheck, IndianRupee, Star, Zap, Percent } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Home, Calculator, Clock, IndianRupee, Star, Zap, Percent } from 'lucide-react';
 
 const banks = [
   { name: "HDFC Bank", rate: "8.35%", speed: "12h Approval", logo: "https://www.vectorlogo.zone/logos/hdfcbank/hdfcbank-icon.svg" },
@@ -107,7 +107,7 @@ const BankOffers = () => {
               {banks.map((bank, idx) => (
                 <motion.div 
                   key={idx}
-                  whileHover={{ y: -5, shadow: "0 10px 25px -5px rgba(0,0,0,0.1)" }}
+                  whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)" }}
                   className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm transition-all duration-300 flex flex-col items-center justify-between h-36"
                 >
                   <div className="h-10 flex items-center justify-center w-full px-2 mb-2">
